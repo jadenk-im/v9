@@ -1,0 +1,165 @@
+:root {
+  --bg-color: black;
+  --text-color: white;
+  --highlight-color: #ff5900;
+
+  --rainbow-color-1: #f5a3a3;
+  --rainbow-color-2: #f5e0a3;
+  --rainbow-color-3: #ccf5a3;
+  --rainbow-color-4: #a3f5b8;
+  --rainbow-color-5: #a3f5f5;
+  --rainbow-color-6: #a3b8f5;
+  --rainbow-color-7: #cca3f5;
+  --rainbow-color-8: #f5a3e0;
+
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 48px;
+
+  --fontsize-sm: 16px;
+  --fontsize-md: 48px;
+  --fontsize-lg: 72px;
+  --fontsize-xl: 128px;
+
+  --lineheight-title: 1.0;
+  --lineheight-subtitle: 1.2;
+  --lineheight-body: 1.5;
+
+  --transition: cubic-bezier(0.87, 0, 0.13, 1);
+  --transition-all: all 300ms var(--transition);
+
+  --animation: rainbowText 300ms steps(1, end);
+
+  --transparency: 0.1;
+
+  --contact-image-1: url('assets/images/contact/contact-image-1.jpg');
+  --contact-image-2: url('assets/images/contact/contact-image-2.jpg');
+  --contact-image-3: url('assets/images/contact/contact-image-3.jpg');
+  --contact-image-4: url('assets/images/contact/contact-image-4.jpg');
+  --contact-image-5: url('assets/images/contact/contact-image-5.jpg');
+  --contact-image-6: url('assets/images/contact/contact-image-6.jpg');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: var(--highlight-color);
+}
+
+html, body, main {
+  min-height: 100%;
+  height: 100%;
+  color: var(--text-color);
+  margin: 0;
+  background-color: var(--bg-color);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.highlight {
+  color: var(--highlight-color);
+}
+
+.loading-screen {
+  position: fixed;
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+.loading-screen > div > h1, .loading-screen > div > h2 {
+  display: none;
+  color: var(--bg-color);
+  text-align: center;
+  padding: var(--spacing-sm);
+}
+
+.loading-screen > img.scale-up {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.no-scroll { 
+  overflow: hidden !important;
+}
+
+/* KEYFRAMES */
+@keyframes rainbowText {
+  0%, 100% {
+    color: var(--text-color);
+  }
+  11% {
+    color: var(--rainbow-color-1);
+  }
+  22% {
+    color: var(--rainbow-color-2);
+  }
+  33% {
+    color: var(--rainbow-color-3);
+  }
+  44% {
+    color: var(--rainbow-color-4);
+  }
+  55% {
+    color: var(--rainbow-color-5);
+  }
+  66% {
+    color: var(--rainbow-color-6);
+  }
+  77% {
+    color: var(--rainbow-color-7);
+  }
+  88% {
+    color: var(--rainbow-color-8);
+  }
+}
+
+/* BREAKPOINTS */
+@media screen and (max-width: 1280px) {
+  :root {
+    --fontsize-md: 40px;
+    --fontsize-lg: 64px;
+    --fontsize-xl: 112px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --fontsize-md: 32px;
+    --fontsize-lg: 56px;
+    --fontsize-xl: 96px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --fontsize-md: 24px;
+    --fontsize-lg: 48px;
+    --fontsize-xl: 64px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  :root {
+    --fontsize-lg: 36px;
+    --fontsize-xl: 56px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --fontsize-xl: 48px;
+  }
+}

@@ -1,0 +1,29 @@
+footer {
+    position: fixed;
+    bottom: var(--spacing-sm);
+    right: var(--spacing-sm);
+    display: flex;
+    z-index: 9999;
+}
+
+footer > a {
+    padding: 12px 15px 7px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    text-decoration: none;
+    border: solid 1px var(--text-color);
+}
+
+footer > a:not(:nth-last-child(1)) {
+    border-right: none;
+}
+
+footer > a:hover {
+    color: var(--text-color);
+    background-color: var(--highlight-color);
+}
+
+.active-link {
+    color: var(--bg-color);
+    background-color: var(--text-color);
+}

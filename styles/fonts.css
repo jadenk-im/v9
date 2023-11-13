@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('../assets/fonts/FoundersGrotesk-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('../assets/fonts/FoundersGrotesk-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ogg';
+  src: url('../assets/fonts/Ogg-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Erica One';
+  src: url('../assets/fonts/EricaOne-Regular.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Derby Surround';
+  src: url('../assets/fonts/DerbySurround-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pixelheart';
+  src: url('../assets/fonts/Pixelheart-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nimbus Cond';
+  src: url('../assets/fonts/Nimbus-Sans-Cond-L_Black.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

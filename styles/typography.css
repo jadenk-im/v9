@@ -1,0 +1,145 @@
+h1, h2, h3, h4, h5, p, a, label, input, button {
+  font-family: 'Founders Grotesk';
+  font-weight: 400;
+  letter-spacing: 0em;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: var(--fontsize-xl);
+  line-height: var(--lineheight-title);
+}
+
+h2 {
+  font-size: var(--fontsize-lg);
+  line-height: var(--lineheight-title);
+}
+
+h3 {
+  font-size: var(--fontsize-md);
+  line-height: var(--lineheight-subtitle);
+}
+
+h4 {
+  font-size: var(--fontsize-sm);
+  line-height: var(--lineheight-body);
+}
+
+h5 {
+  font-size: var(--fontsize-sm);
+  line-height: var(--lineheight-title);
+  font-weight: 600;
+}
+
+p, a, label, input, button {
+  font-size: var(--fontsize-sm);
+  line-height: var(--lineheight-body);
+  text-transform: none;
+  background-color: transparent;
+  border: none;
+}
+
+a, button {
+  text-transform: uppercase;
+}
+
+a:hover, button:hover {
+  cursor: pointer;
+}
+
+.ogg {
+  font-family: 'Ogg';
+  font-weight: 300;
+  transform: translate(-1px, -10px);
+}
+
+.erica {
+  font-family: 'Erica One';
+  font-weight: 600;
+}
+
+.derby {
+  font-family: 'Derby Surround';
+  font-weight: 400;
+  transform: translate(1px, -30px);
+}
+
+.pixelheart {
+  font-family: 'Pixelheart';
+  font-weight: 400;
+  font-size: calc(0.75 * var(--fontsize-lg));
+  line-height: normal;
+  transform: translate(-5px, -4px);
+}
+
+.nimbus {
+  font-family: 'Nimbus Cond';
+  font-weight: 600;
+  transform: translate(-4px, 0);
+}
+
+/* BREAKPOINTS */
+@media screen and (max-width: 1280px) {
+  .derby {
+    transform: translate(1px, -26px);
+  }
+
+  .pixelheart {
+    transform: translate(-4px, -4px);
+  }
+
+  .ogg {
+    transform: translate(-1px, -9px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .derby {
+    transform: translate(1px, -23px);
+  }
+
+  .nimbus {
+    transform: translate(-3px, 0);
+  }
+
+  .ogg {
+    transform: translate(0px, -7px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .derby {
+    transform: translate(1px, -19px);
+  }
+
+  .ogg {
+    transform: translate(0px, -6px);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .derby {
+    transform: translate(1px, -14px);
+  }
+
+  .pixelheart {
+    transform: translate(-3px, -2px);
+  }
+
+  .nimbus {
+    transform: translate(-2px, 0);
+  }
+
+  .ogg {
+    transform: translate(0px, -4px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+}

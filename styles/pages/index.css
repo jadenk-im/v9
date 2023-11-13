@@ -1,0 +1,16 @@
+#footer-section {
+    height: calc(43px + 2 * var(--spacing-sm));
+    background-color: var(--highlight-color);
+    padding: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+#footer-section > img {
+    height: 16px;
+}
+
+#footer-section > p {
+    transform: translate(-1px, 3px);
+}
